@@ -6,7 +6,9 @@
   "dependencies": {
     "express": "^4.17.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "node-fetch": "^2.6.0"
+  },
   "scripts": {
     "start": "node ./bin/www"
   },
