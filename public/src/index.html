@@ -7,8 +7,69 @@
   <title>Birthday Widjet</title>
 </head>
 <body>
-  <h1>Hello, I'm Birthday Widjet</h1>
-  <div id="data"></div>
-  <script src="./main.js"></script>
+  <div class="wrapper">
+    <header>
+        <img src="../assets/img/gift.png" class="gift-icon">
+        <hr>
+        <h2 style="color:#f0c0bf">День Рождения</h2>
+        <h3><input type="date" id="todayIs" value="1987-08-16"><button id="setDate">set</button></h3>
+        <ul class="tabs">
+          <li></li>
+          <li class="today"></li>
+          <li></li>
+        </ul>
+    </header>
+    <section>
+      <div id="data"></div>
+    </section>
+    <footer></footer>
+  </div>
+
+  <script src="./index.js"></script>
+  <style>
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  header {
+    padding: 0 0 40px;
+    /*display: flex;
+    justify-content: center;
+    flex-direction: column;*/
+  }
+  h2 {
+    text-align: center;
+  }
+  ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  hr {
+    color: #e72722;
+  }
+  .gift-icon {
+    width: 20%;
+    margin: auto;
+  }
+  .tabs {
+    display: flex;
+    justify-content: space-between;
+  }
+  .tabs li {
+    padding: 0 20px;
+    cursor: pointer;
+  }
+  #data > li {
+    display: flex;
+    align-items: center;
+  }
+  #data > li > img {
+    padding: 10px;
+  }
+  #data > li .user-name {
+    font-weight: bold;
+  }
+  </style>
 </body>
 </html>
