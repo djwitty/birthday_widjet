@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+header {
+  padding: 0 0 40px;
+}
+h2 {
+  text-align: center;
+}
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+hr {
+  color: #e72722;
+}
+.gift-icon {
+  width: 20%;
+  margin: auto;
+}
+.tabs {
+  display: flex;
+  justify-content: space-between;
+}
+.tabs li {
+  padding: 0 20px;
+  cursor: pointer;
+}
+#data > li {
+  display: flex;
+  align-items: center;
+}
+#data > li > img {
+  padding: 10px;
+}
+#data > li .user-name {
+  font-weight: bold;
+}
